@@ -34,7 +34,7 @@
     <!-- To show or not show the Loader (Application opening time Spinner) -->
     <script>
         window.addEventListener("load", function () {
-            document.querySelector("#all-content").style.display = "block";
+            document.querySelector("#all-content").style.overflow = "auto";
             document.querySelector("#loaderBox").style.display = "none";
         });
     </script>
@@ -44,7 +44,7 @@
 <body class="bg-[#171E2E!important]">
 
     <!-- Loader (Application opening time spinner) -->
-    <div id="loaderBox" class="relative h-screen w-screen bg-[#171E2E!important]">
+    <div id="loaderBox" class="fixed h-screen w-screen bg-[#171E2E!important] z-[99]">
         <div id="loader" class="absolute top-0 bottom-0 left-0 right-0 m-auto"></div>
     </div>
 
