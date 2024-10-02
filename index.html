@@ -23,14 +23,47 @@
     <!-- Icons Plugin-Font Awesome -->
     <script src="https://kit.fontawesome.com/0b925a0b9b.js" crossorigin="anonymous"></script>
 
+    <!-- Owl-Carousel - Carousel Plugin -->
+
+
+
+
+
+    
     <!-- Plyr.io - Video Player Plugin -->
     <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" crossorigin href="assets/index-dasI4p4x.css">
+    <!-- Tailwind css -->
+
+
+    <!-- My CSS -->
+    <link rel="stylesheet" crossorigin href="assets/index-unSWsgpK.css">
+
+
+    <!-- To show or not show the Loader (Application opening time Spinner) -->
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState == "complete") {
+                document.querySelector("body").style.overflow = "auto";
+                document.querySelector("#loaderBox").style.display = "none";
+            } else {
+                document.querySelector("body").style.overflow = "hidden";
+                document.querySelector("#loaderBox").style.display = "block";
+            }
+        };
+    </script>
+
+
+
 </head>
 
-<body class="bg-[#171E2E!important]">
+<body style="overflow: hidden;" class="bg-[#171E2E!important]">
+    
+    <!-- Loader (Application opening time spinner) -->
+    <div id="loaderBox" class="relative h-screen w-screen m-auto bg-[#171E2E!important] z-[90]">
+        <div id="loader" class="absolute top-0 bottom-0 left-0 right-0 m-auto"></div>
+    </div>
+
     <header>
         <nav class="md:flex flex-col md:flex-row mx-auto justify-between p-4 fixed z-50 top-0 left-0 w-full">
             <div class="flex justify-between items-center font-bold text-teal-500 text-3xl signika">
@@ -455,7 +488,7 @@
     <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
 
     <!-- My JavaScript -->
-    <script type="module" crossorigin src="assets/index-7rCfLn1X.js"></script>
+    <script type="module" crossorigin src="assets/index-ikwxVqbR.js"></script>
 
 </body>
 
